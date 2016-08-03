@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>MyOutputStream</servlet-name>
+    <servlet-class>eden.study.response.OutputStream</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyOutputStream</servlet-name>
+    <url-pattern>/servlet/OutputStream</url-pattern>
+  </servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>MyPrintWriter</servlet-name>
+    	<servlet-class>eden.study.response.MyPrintWriter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>MyPrintWriter</servlet-name>
+    	<url-pattern>/servlet/myPrintWriter</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+    	<servlet-name>WriterAndPrint</servlet-name>
+    	<servlet-class>eden.study.response.WriterAndPrint</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>WriterAndPrint</servlet-name>
+    	<url-pattern>/servlet/writerAndPrint</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>DownloadWithOutputStream</servlet-name>
+    	<servlet-class>eden.study.response.DownloadWithOutputStream</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>DownloadWithOutputStream</servlet-name>
+    	<url-pattern>/servlet/downloadWithOutputStream</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>DownloadWithPrintWriter</servlet-name>
+    	<servlet-class>eden.study.response.DownloadWithPrintWriter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>DownloadWithPrintWriter</servlet-name>
+    	<url-pattern>/servlet/downloadWithPrintWriter</url-pattern>
+	</servlet-mapping>
+
+</web-app>
